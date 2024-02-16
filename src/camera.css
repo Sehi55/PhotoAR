@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: url('./assets/background.jpg') #f3f8fd;
+    background: url('./assets/background.jpg') -moz-linear-gradient(top, #f3f8fd 0%, #ffffff 100%);
+    background: url('./assets/background.jpg') -webkit-linear-gradient(top, #f3f8fd 0%, #ffffff 100%);
+    background: url('./assets/background.jpg') linear-gradient(to bottom, #f3f8fd 0%, #ffffff 100%);
+    background-size: cover;
+}
+.btn, #copyright {
+    position: fixed;
+}
+.btn {
+    z-index: 999;
+    
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+
+    box-sizing: border-box;
+    
+    border-radius: 15px;
+
+    
+    color: white;
+
+    cursor: pointer;
+
+    border:none;
+
+    transition: 0.2s ease;
+}
+.flip-container {
+    width: 6vh;
+    height: 4.3vh;
+    border-radius: 15px 15px 15px 15px;
+    right: 12%;
+    bottom: 5vh;
+    background: url('assets/flipCamera.png') no-repeat;
+    background-size: cover;
+    
+}
+
+
+.snapshot-container {
+    width: 10vh;
+    height:  10vh;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+
+    border: 10px solid #01D281;
+    border-radius: 100%;
+
+    background: #FFFDEE;
+    
+}
+.snapshot-container i.fa.noselect {
+    line-height: 2em;
+}
+
+
+
+#ZapparSnapshotContainer {
+    background: #FF5551;
+
+}
+#zapparSaveButton .st0{
+    fill: #01D281;
+}
+#zapparShareButton .st0{
+    fill: #01D281;
+}
+#zapparCloseAref g {
+    stroke: #01D281;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.back_btn{
+    background: none;
+    width: fit-content;
+    border-radius: 0 ;
+    color: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+}
+#header{
+    background-color: #FFFDEE;
+    position: absolute;
+    top:0;
+    width:100vw;
+    height: 8vh;
+}
+#insetShadow{
+    background-color: #FFFDEE;
+    position: absolute;
+    bottom:0;
+    width:100vw;
+    height: 15vh;
+}

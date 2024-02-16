@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #6b6a64;
+  background-image: url("tutorial2.adaed431.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.page {
+  color: #fff;
+  font-size: larger;
+  position: absolute;
+  bottom: 5%;
+}
+
+.prevButton {
+  background: none;
+  border: none;
+  padding-top: 10px;
+  position: absolute;
+  left: 2%;
+}
+
+.nextButton {
+  background: none;
+  border: none;
+  padding-top: 10px;
+  position: absolute;
+  right: 2%;
+}
+
+.tutorial {
+  width: 90vw;
+  max-width: 400px;
+  max-height: 150px;
+  height: 15vh;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  font-size: x-small;
+  font-weight: 600;
+  display: flex;
+}
+
+/*# sourceMappingURL=tutorial2.049aae02.css.map */

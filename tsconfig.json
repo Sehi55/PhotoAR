@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "./lib",
+    "lib": ["es2015", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "rootDir": "./src",
+    // "noImplicitUseStrict": true, // 기존 옵션 주석 처리
+    "alwaysStrict": false,
+    "ignoreDeprecations": "5.0" // 새로운 옵션 추가
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
