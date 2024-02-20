@@ -5,12 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PHOTO AR</title>
-        <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="./custom.css">
         <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
         <meta http-equiv="Pragma" content="no-cache">
         <meta http-equiv="Expires" content="0">
         <meta http-equiv="X-Content-Type-Options" content="nosniff">
-        <script src="custom.ts"></script>
+        <script src="./custom.ts"></script>
     </head>
     <body>
         <div class="header">
@@ -19,8 +19,23 @@
               </button>
               <h4>쿠 커스텀 페이지</h4>
         </div>
-        <div class="custom">
-            <img src="assets/ku_standing.png" class="ku_img" alt="ku_img">
+        <div class="custom_body">
+            <div class="custom_ku">
+                <img src="assets/basic_makeup.png" class="custom makeup active" alt="basic_makeup">
+
+                <img src="assets/2024_clothes.png" class="custom clothes" alt="2024_clothes">
+                <img src="assets/freshman_clothes.png" class="custom clothes" alt="freshman_clothes">
+                
+
+                <img src="assets/freshman_makeup.png" class="custom makeup" alt="freshman_makeup">
+                <img src="assets/metamong_makeup.png" class="custom makeup" alt="metamong_makeup">
+
+                <img src="assets/2024_background.png" class="custom background" alt="2024_background">
+                <img src="assets/freshman_background.png" class="custom background" alt="freshman_background">
+                <img src="assets/metamong_background.png" class="custom background" alt="metamong_background">
+
+                <img src="assets/ku_standing.png" class="background_ku" alt="ku_img">
+            </div>
             <button class="restart_btn"><img src="assets/restartbutton.png" alt="Restart Button"></button>
             <ul class="menu">
                 <li><button class="tab active" onclick="onClickMenu(event)">옷</button></li>
@@ -31,37 +46,29 @@
             </ul>
             
             <ul class="option active">
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_makeup.png" class="makeup" alt="2024_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/freshman_makeup.png" class="makeup" alt="freshman_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/metamong_makeup.png" class="makeup" alt="metamong_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_1.png" class="makeup" alt="2024_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/freshman_clothes.png" class="makeup" alt="freshman_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_2.png" class="makeup" alt="metamong_makeup"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes.png" class="select" alt="2024_clothes"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/freshman_clothes.png" class="select" alt="freshman_clothes"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
             </ul>
 
             <ul class="option">
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_1.png" class="makeup" alt="2024_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/freshman_clothes.png" class="makeup" alt="freshman_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_2.png" class="makeup" alt="metamong_makeup"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/basic_makeup.png" class="select" alt="basic_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/freshman_makeup.png" class="select" alt="freshman_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/metamong_makeup.png" class="select" alt="metamong_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
             </ul>
             <ul class="option">
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_makeup.png" class="makeup" alt="2024_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/freshman_makeup.png" class="makeup" alt="freshman_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/metamong_makeup.png" class="makeup" alt="metamong_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_1.png" class="makeup" alt="2024_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/freshman_clothes.png" class="makeup" alt="freshman_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_2.png" class="makeup" alt="metamong_makeup"></button></li>
+
             </ul>
             <ul class="option">
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_1.png" class="makeup" alt="2024_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/freshman_clothes.png" class="makeup" alt="freshman_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_2.png" class="makeup" alt="metamong_makeup"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/2024_background.png" class="select" alt="2024_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/freshman_background.png" class="select" alt="freshman_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/metamong_background.png" class="select" alt="metamong_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
             </ul>
             <ul class="option">
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_1.png" class="makeup" alt="2024_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/freshman_clothes.png" class="makeup" alt="freshman_makeup"></button></li>
-                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes_2.png" class="makeup" alt="metamong_makeup"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/2024_clothes.png" class="select" alt="2024_clothes"><img src="assets/2024_background.png" class="select" alt="2024_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/freshman_makeup.png" class="select" alt="freshman_makeup"><img src="assets/freshman_clothes.png" class="select" alt="freshman_clothes"><img src="assets/freshman_background.png" class="select" alt="freshman_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" draggable="true"><img src="assets/metamong_makeup.png" class="select" alt="metamong_makeup"><img src="assets/metamong_background.png" class="select" alt="metamong_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
             </ul>
+
             
         </div>
         <button onclick="location.href='camera.html'" class="camera_btn">사진찍기</button>

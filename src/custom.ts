@@ -16,4 +16,22 @@ const onClickMenu = (e: MouseEvent) => {
   
     options[optionIndex].classList.add('active');
   };
+
+  const optionButtons = document.querySelectorAll('.option_btn') as NodeListOf<HTMLButtonElement>;
+
+  optionButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          const selectedImage = button.querySelector('.select') as HTMLImageElement;
+          const selectedType = selectedImage.getAttribute('alt');
+          const allImages = document.querySelectorAll(`.custom`);
+  
+          allImages.forEach(image => {
+              if (image.getAttribute('alt') === selectedType) {
+                  image.classList.add('active');
+              } else {
+                  image.classList.remove('active');
+              }
+          });
+      });
+  });
   
