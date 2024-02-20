@@ -12,17 +12,18 @@ const onClickMenu = (e)=>{
     });
     options[optionIndex].classList.add("active");
 };
-const optionButtons = document.querySelectorAll(".option_btn");
-optionButtons.forEach((button)=>{
-    button.addEventListener("click", ()=>{
-        const selectedImage = button.querySelector(".select");
-        const selectedType = selectedImage.getAttribute("alt");
-        const allImages = document.querySelectorAll(`.custom`);
-        allImages.forEach((image)=>{
-            if (image.getAttribute("alt") === selectedType) image.classList.add("active");
-            else image.classList.remove("active");
-        });
+const onClickOption = (e)=>{
+    const customs = document.querySelectorAll(".custom");
+    customs.forEach((custom)=>{
+        custom.classList.remove("active");
     });
-});
+    const clickedButton = e.target;
+    const images = clickedButton.querySelectorAll(".select");
+    // NodeList를 Array로 변환하여 forEach 사용
+    Array.from(images).forEach((img)=>{
+        const imageElement = img; // 형변환
+        console.log(imageElement.alt);
+    });
+};
 
 //# sourceMappingURL=custom.b45d1c24.js.map

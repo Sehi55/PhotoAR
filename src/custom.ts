@@ -17,21 +17,18 @@ const onClickMenu = (e: MouseEvent) => {
     options[optionIndex].classList.add('active');
   };
 
-  const optionButtons = document.querySelectorAll('.option_btn') as NodeListOf<HTMLButtonElement>;
 
-  optionButtons.forEach(button => {
-      button.addEventListener('click', () => {
-          const selectedImage = button.querySelector('.select') as HTMLImageElement;
-          const selectedType = selectedImage.getAttribute('alt');
-          const allImages = document.querySelectorAll(`.custom`);
-  
-          allImages.forEach(image => {
-              if (image.getAttribute('alt') === selectedType) {
-                  image.classList.add('active');
-              } else {
-                  image.classList.remove('active');
-              }
-          });
-      });
-  });
-  
+  const onClickOption = (e: MouseEvent) => {
+    const customs = document.querySelectorAll('.custom');
+    customs.forEach(custom => {
+        custom.classList.remove('active');
+    });
+    const clickedButton = e.target as HTMLButtonElement;
+    const images = clickedButton.querySelectorAll(".select");
+
+    // NodeList를 Array로 변환하여 forEach 사용
+    Array.from(images).forEach((img: Element) => {
+        const imageElement = img as HTMLImageElement; // 형변환
+        console.log(imageElement.alt);
+    });
+};
