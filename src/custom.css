@@ -90,6 +90,7 @@
   .restart_btn {
     /* border: 1px solid #6f573c;
     border-radius: 15px; */
+    z-index: 999;
     position: absolute;
     bottom: 220px;
     right: 0;
@@ -115,7 +116,18 @@
   .background_ku {
     z-index: 0;
   }
-  
+  .custom.background.active{
+    z-index: 1;
+  }
+  .custom.clothes.active{
+    z-index: 3;
+  }
+  .custom.prop.active{
+    z-index: 99;
+  }
+  .custom.makeup.active{
+    z-index: 2;
+  }
   .select {
     z-index: 2;
   }
@@ -123,9 +135,9 @@
     display:none;
   }
 
-  .custom.makeup.active,.custom.backgroud.active,.custom.clothes.active{
+  .custom.makeup.active,.custom.background.active,.custom.clothes.active,.custom.prop.active{
     display:flex;
-    z-index: 2;
+   
   }
   .option{
     display: none;

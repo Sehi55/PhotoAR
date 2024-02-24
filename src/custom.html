@@ -26,6 +26,10 @@
                 <img src="assets/2024_clothes.png" class="custom clothes" alt="2024_clothes">
                 <img src="assets/freshman_clothes.png" class="custom clothes" alt="freshman_clothes">
                 
+                <img src="assets/prop2.png" class="custom prop" alt="prop2">
+                <img src="assets/prop3.png" class="custom prop" alt="prop3">
+                <img src="assets/prop1.png" class="custom prop" alt="prop1">
+                
 
                 <img src="assets/freshman_makeup.png" class="custom makeup" alt="freshman_makeup">
                 <img src="assets/metamong_makeup.png" class="custom makeup" alt="metamong_makeup">
@@ -33,10 +37,11 @@
                 <img src="assets/2024_background.png" class="custom background" alt="2024_background">
                 <img src="assets/freshman_background.png" class="custom background" alt="freshman_background">
                 <img src="assets/metamong_background.png" class="custom background" alt="metamong_background">
+                <img src="assets/end_background.png" class="custom background" alt="end_background">
 
                 <img src="assets/ku_standing.png" class="background_ku" alt="ku_img">
             </div>
-            <button class="restart_btn"><img src="assets/restartbutton.png" alt="Restart Button"></button>
+            <button class="restart_btn" onclick="onClickRestart(event)"><img src="assets/restartbutton.png" alt="restart_Button"></button>
             <ul class="menu">
                 <li><button class="tab active" onclick="onClickMenu(event)">옷</button></li>
                 <li><button class="tab" onclick="onClickMenu(event)">메이크업</button></li>
@@ -46,27 +51,31 @@
             </ul>
             
             <ul class="option active">
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/2024_clothes.png" class="select" alt="2024_clothes"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/freshman_clothes.png" class="select" alt="freshman_clothes"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/2024_clothes.png" class="select clothes" alt="2024_clothes"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/freshman_clothes.png" class="select clothes" alt="freshman_clothes"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
             </ul>
 
             <ul class="option">
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/basic_makeup.png" class="select" alt="basic_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/freshman_makeup.png" class="select" alt="freshman_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/metamong_makeup.png" class="select" alt="metamong_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/basic_makeup.png" class="select makeup" alt="basic_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/freshman_makeup.png" class="select makeup" alt="freshman_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/metamong_makeup.png" class="select makeup" alt="metamong_makeup"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
             </ul>
             <ul class="option">
-
+                
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/prop2.png" class="select prop" alt="prop2"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/prop3.png" class="select prop" alt="prop3"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/prop1.png" class="select prop" alt="prop1"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
             </ul>
             <ul class="option">
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/2024_background.png" class="select" alt="2024_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn"onclick="onClickOption(event)" ><img src="assets/metamong_background.png" class="select" alt="metamong_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/freshman_background.png" class="select" alt="freshman_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/2024_background.png" class="select background" alt="2024_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn"onclick="onClickOption(event)" ><img src="assets/metamong_background.png" class="select background" alt="metamong_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/freshman_background.png" class="select background" alt="freshman_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/end_background.png" class="select background" alt="end_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
             </ul>
             <ul class="option">
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/2024_clothes.png" class="select" alt="2024_clothes"><img src="assets/2024_background.png" class="select" alt="2024_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/freshman_makeup.png" class="select" alt="freshman_makeup"><img src="assets/freshman_clothes.png" class="select" alt="freshman_clothes"><img src="assets/freshman_background.png" class="select" alt="freshman_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
-                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/metamong_makeup.png" class="select" alt="metamong_makeup"><img src="assets/metamong_background.png" class="select" alt="metamong_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/2024_clothes.png" class="select clothes" alt="2024_clothes"><img src="assets/2024_background.png" class="select background" alt="2024_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/freshman_makeup.png" class="select makeup" alt="freshman_makeup"><img src="assets/freshman_clothes.png" class="select clothes" alt="freshman_clothes"><img src="assets/freshman_background.png" class="select background" alt="freshman_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
+                <li><button class="option_btn" onclick="onClickOption(event)"><img src="assets/metamong_makeup.png" class="select makeup" alt="metamong_makeup"><img src="assets/metamong_background.png" class="select background" alt="metamong_background"><img src="assets/background_ku.png" class="background_ku" alt="background_ku"></button></li>
             </ul>
 
             
